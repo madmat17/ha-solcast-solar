@@ -46,3 +46,29 @@ SITE_DAMP: Final[str] = "site_damp"
 SOLCAST_URL: Final[str] = "https://api.solcast.com.au"
 TITLE: Final[str] = "Solcast Solar"
 UNDAMPENED: Final[str] = "undampened"
+
+# Dynamic dormer shading options
+CONF_DAMPENING_MODE: Final[str] = "dampening_mode"          # "fixed" | "dynamic"
+CONF_DYNAMIC_SITE: Final[str] = "dynamic_site_resource_id"  # site resource id
+
+CONF_DORMER_WIDTH: Final[str] = "dormer_width_m"
+CONF_DORMER_DEPTH: Final[str] = "dormer_depth_m"
+CONF_DORMER_HEIGHT: Final[str] = "dormer_height_m"
+CONF_DORMER_XCENTER: Final[str] = "dormer_x_center_m"
+CONF_DORMER_YFRONT: Final[str] = "dormer_y_front_m"
+
+CONF_LEFT_X0: Final[str] = "left_x0_m"
+CONF_LEFT_Y0: Final[str] = "left_y0_m"
+CONF_LEFT_X1: Final[str] = "left_x1_m"
+CONF_LEFT_Y1: Final[str] = "left_y1_m"
+
+CONF_RIGHT_X0: Final[str] = "right_x0_m"
+CONF_RIGHT_Y0: Final[str] = "right_y0_m"
+CONF_RIGHT_X1: Final[str] = "right_x1_m"
+CONF_RIGHT_Y1: Final[str] = "right_y1_m"
+
+# Service to force regeneration now
+SERVICE_RECALC_DYNAMIC: Final[str] = "recalculate_dynamic_dampening"
+
+# Internal option key
+OPT_DYNAMIC_LAST_BUILD_UTC: Final[str] = "dynamic_last_build_utc"
